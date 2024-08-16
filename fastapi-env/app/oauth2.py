@@ -1,10 +1,10 @@
 from fastapi import Depends, status, HTTPException
 from jose import JWTError, jwt
 from datetime import datetime, timedelta
-from . import schemas, database, models
+from app import schemas, database, models
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
-from .database import get_db
+from app.database import get_db
 from dotenv import load_dotenv
 import os
 

@@ -7,9 +7,9 @@ import psycopg2
 from psycopg2.extras import RealDictCursor
 import time
 from sqlalchemy.orm import Session
-from . import models,schemas,utils
-from .database import engine, get_db
-from .routers import movies,users,authentication,ratings, comments
+from app import models,schemas,utils
+from app.database import engine, get_db
+from app.routers import movies,users,authentication,ratings, comments
 import os
 from dotenv import load_dotenv
 
