@@ -10,18 +10,8 @@ from sqlalchemy.orm import Session
 from app import models,schemas,utils
 from app.database import engine, get_db
 from app.routers import movies,users,authentication,ratings, comments
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 app = FastAPI()
-
-SQLALCHEMY_DATABASE_URL = os.getenv("SQLALCHEMY_DATABASE_URL")
-
-models.Base.metadata.create_all(bind=engine)
-
-
 
 
 app.include_router(movies.router)
