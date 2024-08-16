@@ -20,15 +20,7 @@ SQLALCHEMY_DATABASE_URL = os.getenv("SQLALCHEMY_DATABASE_URL")
 models.Base.metadata.create_all(bind=engine)
 
 
-app = FastAPI(
-    title= "Movie Management API",
-    description= "An API that manages movies, users creations and comments",
-    version= "1.0.0",
-    contact= {
-        "name": "Temidayo Ejide",
-        "email": "temidayoejide1@gmail.com"
-    }
-)
+app = FastAPI()
 
 app.include_router(movies.router)
 app.include_router(users.router)
