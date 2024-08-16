@@ -29,7 +29,7 @@ An API that manages movies, users creations and comments
    ```bash
    python3 -m venv venv
    source venv/bin/activate
-   
+
    **On Windows**:
    ```bash
    python -m venv venv
@@ -37,7 +37,7 @@ An API that manages movies, users creations and comments
 
 3. **Install the required dependencies**:
    ```bash
-   Install the required dependencies
+  pip install -r requirements.txt
 
 4. **Run the FastAPI server**:
 
