@@ -6,7 +6,7 @@ An API that manages movies, users creations and comments
 
 - Create Users
 - List, Delete and Update Movies
-- Create comments f
+- Create comments for movies and comments under comments
 
 ## Dependencies
 
