@@ -15,12 +15,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+app = FastAPI()
+
 SQLALCHEMY_DATABASE_URL = os.getenv("SQLALCHEMY_DATABASE_URL")
 
 models.Base.metadata.create_all(bind=engine)
 
 
-app = FastAPI()
+
 
 app.include_router(movies.router)
 app.include_router(users.router)
